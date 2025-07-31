@@ -1,0 +1,39 @@
+# Listar todas as transações
+GET http://localhost:3333/api/transactions
+Accept: application/json
+
+###
+
+# Criar uma nova transação
+POST http://localhost:3333/api/transactions
+Content-Type: application/json
+
+{
+  "description": "Compra Supermercado",
+  "amount": 150,
+  "type": "debit",
+  "categoryId": "",
+  "bankId": "",
+  "date": "2025-03-16T00:00:00.000Z"
+}
+
+
+###
+
+# Atualizar transação 
+PATCH http://localhost:3333/api/transactions/
+Content-Type: application/json
+
+{
+  "description": "Compra Atualizada",
+  "amount": 200,
+  "type": "debit",
+  "categoryId":"",
+  "bankId": "",
+  "date": "2024-03-17T00:00:00.000Z"
+}
+
+###
+
+# Deletar transação 
+DELETE http://localhost:3333/api/transactions/

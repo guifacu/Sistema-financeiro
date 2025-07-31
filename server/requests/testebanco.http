@@ -1,0 +1,30 @@
+# Listar todos os bancos
+GET http://localhost:3333/api/banks
+Accept: application/json
+
+###
+
+# Criar um novo banco
+POST http://localhost:3333/api/banks
+Content-Type: application/json
+
+{
+  "name": "Banco Teste",
+  "code": "123"
+}
+
+###
+
+# Atualizar banco 
+PATCH http://localhost:3333/api/banks/
+Content-Type: application/json
+
+{
+  "name": "Banco Atualizado",
+  "code": "321"
+}
+
+###
+
+# Deletar banco 
+DELETE http://localhost:3333/api/banks/

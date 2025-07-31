@@ -1,0 +1,31 @@
+# Listar todas as categorias
+GET http://localhost:3333/api/categories
+Accept: application/json
+
+###
+
+# Criar uma nova categoria
+POST http://localhost:3333/api/categories
+Content-Type: application/json
+
+{
+  "name": "Categoria Teste",
+  "icon": "Acessorios"
+}
+
+
+###
+
+# Atualizar categoria 
+PATCH http://localhost:3333/api/categories/
+Content-Type: application/json
+
+{
+  "name": "Categoria Atualizada",
+  "icon": "Molduras"
+}
+
+###
+
+# Deletar categoria 
+DELETE http://localhost:3333/api/categories/
